@@ -1,0 +1,124 @@
+.updates-main {
+  margin-top: 20px;
+
+  min-height: 100vh; /* Ensures it occupies full height */
+  width: 100vw; /* Ensures it takes full width of the container */
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0; /* Adjusted padding for better spacing */
+}
+
+.heading-banner {
+  width: 100%; /* Take full width */
+  max-width: none; /* Remove max-width constraint */
+  font-size: 1.6rem;
+  background-color: #ffffff;
+  border-top: 3px solid #1e3a8a;
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.updates-content-wrapper {
+  width: 100%; /* Take full width */
+  max-width: none; /* Remove max-width constraint */
+  background-color: #ffffff;
+  border-top: 3px solid #1e3a8a;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.updates-content-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 1.5rem;
+}
+
+.updates-contents ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.updates-contents li {
+  margin: 1rem 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #555;
+}
+
+.instructions-image {
+  margin: 2rem auto;
+  width: 60%;
+  max-width: 300px;
+}
+
+.get-admitCard-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.get-admitCard-btn {
+  color: #ffffff;
+  background-color: #1e3a8a;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.get-admitCard-btn:hover {
+  background-color: #174294;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .updates-main {
+    padding: 1.5rem 1rem; /* Slightly reduce padding for smaller screens */
+  }
+
+  .heading-banner,
+  .updates-content-wrapper {
+    width: 95%; /* Adjust width to maintain padding */
+    max-width: 100%; /* Ensure full width */
+  }
+
+  .updates-content-heading {
+    font-size: 1.5rem;
+  }
+
+  .updates-contents li {
+    font-size: 0.95rem;
+  }
+
+  .instructions-image {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .updates-main {
+    padding: 1rem 0.5rem;
+  }
+
+  .updates-content-heading {
+    font-size: 1.3rem;
+  }
+
+  .updates-contents li {
+    font-size: 0.9rem;
+  }
+}
